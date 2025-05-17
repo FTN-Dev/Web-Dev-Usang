@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> basic js </title>
+</head>
+<body>
+
+    <script>
+
+        /* function tidak wajib memiliki nama,kurung harus tetap ada walaupun tidak ada parameter. */
+        // function hasilVolumeDuaKubus(a, b) {
+        //     let volA = a * a * a;
+        //     let volB = b * b * b;
+        //     let total = volA + volB;
+        //     return total;
+        // }
+
+        /* menjalankan function dan menampilkannya pada console */
+        // console.log(hasilVolumeDuaKubus(8, 3));
+
+
+        // percobaan
+
+        function volDuaKubus(sisiA, sisiB) {
+            let volA = sisiA * sisiA * sisiA;
+            let volB = sisiB * sisiB * sisiB;
+            let total = volA + volB;
+            return total;
+        }
+
+        alert("Selamat Datang! \nIni adalah program untuk menghitung 2 Volume Kubus");
+        let tanya = true;
+        while(tanya) {
+            let a = parseInt(prompt("Volume Kubus A"));
+            let b = parseInt(prompt("Volume Kubus B"));
+            alert("Jumlah Kedua Volume Kubus \n" + volDuaKubus(a, b));
+            tanya = confirm("ingin menghitung lagi?");
+        }
+        alert("Terima Kasih :)");
+
+    </script>
+    
+</body>
+</html>
